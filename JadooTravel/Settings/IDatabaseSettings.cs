@@ -8,5 +8,7 @@
         public string DestinationCollectionName { get; set; }
         public string FeatureCollectionName { get; set; }
         public string TripPlanCollectionName { get; set; }
+        public string TestimonialCollectionName { get; set; }
+        public string RezervationCollectionName { get; set; }
     }
 }
