@@ -1,4 +1,4 @@
-﻿
+﻿@inject Microsoft.Extensions.Localization.IStringLocalizer<SharedResource> L
 @*
    _DefaultFeatureComponentPartial
 *@
@@ -12,7 +12,7 @@
         <div class="row align-items-center">
             <div class="col-md-5 col-lg-6 order-0 order-md-1 text-end"><img class="pt-7 pt-md-0 hero-img" src="/public/assets/img/hero/hero-img.png" alt="hero-header" /></div>
             <div class="col-md-7 col-lg-6 text-md-start text-center py-6">
-                <h4 class="fw-bold text-danger mb-3">Dünyadaki en iyi rotaları keşfedin</h4>
+                <h4 class="fw-bold text-danger mb-3">@L["FeatureTittle"]</h4>
                 <h1 class="hero-title">Travel, enjoy and live a new and full life</h1>
                 <p class="mb-4 fw-medium">Built Wicket longer admire do barton vanity itself do in it.<br class="d-none d-xl-block" />Preferred to sportsmen it engrossed listening. Park gate<br class="d-none d-xl-block" />sell they west hard for the.</p>
                 <div class="text-center text-md-start">

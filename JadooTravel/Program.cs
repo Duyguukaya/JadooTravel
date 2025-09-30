@@ -3,11 +3,14 @@ using JadooTravel.Services.DestinationServices;
 using JadooTravel.Settings;
 using Microsoft.Extensions.Options;
 using System.Reflection;
+using System.Globalization;
+using Microsoft.AspNetCore.Localization;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
+// ---------------------------
+// Mevcut servisler
+// ---------------------------
 builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<IDestinationService, DestinationService>();
 
@@ -20,15 +23,48 @@ builder.Services.AddScoped<IDatabaseSettings>(sp =>
     return sp.GetRequiredService<IOptions<DatabaseSettings>>().Value;
 });
 
-builder.Services.AddControllersWithViews();
+// ---------------------------
+// Localization (dil desteði)
+// ---------------------------
+builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
+
+builder.Services
+    .AddControllersWithViews()
+    .AddViewLocalization(Microsoft.AspNetCore.Mvc.Razor.LanguageViewLocationExpanderFormat.Suffix)
+    .AddDataAnnotationsLocalization();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// ---------------------------
+// Supported cultures (desteklenen diller)
+// ---------------------------
+var supportedCultures = new[]
+{
+    new CultureInfo("tr-TR"),
+    new CultureInfo("en-US"),
+    new CultureInfo("de-DE"),
+    new CultureInfo("fr-FR"),
+    new CultureInfo("es-ES")
+};
+
+var localizationOptions = new RequestLocalizationOptions
+{
+    DefaultRequestCulture = new RequestCulture("tr-TR"), // Baþlangýç dili
+    SupportedCultures = supportedCultures,
+    SupportedUICultures = supportedCultures
+};
+
+// Provider sýrasý: önce query string -> cookie -> browser header
+localizationOptions.RequestCultureProviders.Insert(0, new QueryStringRequestCultureProvider { QueryStringKey = "culture", UIQueryStringKey = "ui-culture" });
+
+app.UseRequestLocalization(localizationOptions);
+
+// ---------------------------
+// Pipeline (mevcut)
+// ---------------------------
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 

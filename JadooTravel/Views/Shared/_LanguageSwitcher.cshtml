@@ -1,0 +1,28 @@
+﻿@{
+    var returnUrl = Context.Request.Path + Context.Request.QueryString;
+    var languages = new[] {
+        new { Code = "tr-TR", Label = "Türkçe" },
+        new { Code = "en-US", Label = "English" },
+        new { Code = "de-DE", Label = "Deutsch" },
+        new { Code = "fr-FR", Label = "Français" },
+        new { Code = "es-ES", Label = "Español" }
+    };
+}
+
+<form asp-controller="Culture" asp-action="SetCulture" method="post" class="d-inline">
+    <input type="hidden" name="returnUrl" value="@returnUrl" />
+    <select name="culture" onchange="this.form.submit()">
+        @foreach (var lang in languages)
+        {
+            if (System.Globalization.CultureInfo.CurrentUICulture.Name == lang.Code)
+            {
+                <option value="@lang.Code" selected>@lang.Label</option>
+            }
+            else
+            {
+                <option value="@lang.Code">@lang.Label</option>
+            }
+        }
+    </select>
+</form>
+
