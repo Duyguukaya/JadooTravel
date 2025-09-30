@@ -1,4 +1,4 @@
-﻿
+﻿@inject Microsoft.Extensions.Localization.IStringLocalizer<SharedResource> L
 @*
 _DefaultCategoryComponentPartial
 *@
@@ -8,8 +8,8 @@ _DefaultCategoryComponentPartial
     <div class="container">
         <div class="position-absolute z-index--1 end-0 d-none d-lg-block"><img src="/public/assets/img/category/shape.svg" style="max-width: 200px" alt="service" /></div>
         <div class="mb-7 text-center">
-            <h5 class="text-secondary">Kategoriler </h5>
-            <h3 class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize">We Offer Best Services</h3>
+            <h5 class="text-secondary">@L["ServicesCategory"]</h5>
+            <h3 class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize">@L["ServicesTittle"]</h3>
         </div>
         <div class="row">
             <div class="col-lg-3 col-sm-6 mb-6">

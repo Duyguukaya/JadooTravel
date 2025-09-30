@@ -117,10 +117,121 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="FeatureButton" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FeatureComment1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FeatureComment2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FeatureComment3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FeaturePlay" xml:space="preserve">
+    <value />
+  </data>
   <data name="FeatureSubTittle" xml:space="preserve">
     <value>&#x8;</value>
   </data>
   <data name="FeatureTittle" xml:space="preserve">
     <value>&#x8;</value>
+  </data>
+  <data name="DestinationTittle" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DestinationSubTittle" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ServicesCategory" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ServicesTittle" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RezervationSubTittle" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RezervationTittle" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Rezervation1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Rezervation2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Rezervation3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Rezervation4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Rezervation5" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Rezervation6" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Rezervation7" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Rezervation8" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Rezervation9" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Iletisim" xml:space="preserve">
+    <value />
+  </data>
+  <data name="iletisimadsoyad" xml:space="preserve">
+    <value />
+  </data>
+  <data name="İletisimtelno" xml:space="preserve">
+    <value />
+  </data>
+  <data name="iletisimemail" xml:space="preserve">
+    <value />
+  </data>
+  <data name="iletisimeklenecek" xml:space="preserve">
+    <value />
+  </data>
+  <data name="iletisimgonder" xml:space="preserve">
+    <value />
+  </data>
+  <data name="navbar1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="navbar2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="navbar3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="navbar4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="navbar5" xml:space="preserve">
+    <value />
+  </data>
+  <data name="navbar6" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Testimonialtittle" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TestimonialSubTittle" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AItittle" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AISearch" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AIButton" xml:space="preserve">
+    <value />
   </data>
 </root>

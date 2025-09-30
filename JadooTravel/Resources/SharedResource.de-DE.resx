@@ -117,11 +117,153 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="FeatureButton" xml:space="preserve">
+    <value>
+Erfahren Sie mehr</value>
+  </data>
+  <data name="FeatureComment1" xml:space="preserve">
+    <value>
+Das gebaute Wicket kann länger bewundert werden, um die Eitelkeit von Barton selbst darin zu bewundern.</value>
+  </data>
+  <data name="FeatureComment2" xml:space="preserve">
+    <value>
+Vorrangig für Sportler war es ein fesselndes Zuhören. Parktor</value>
+  </data>
+  <data name="FeatureComment3" xml:space="preserve">
+    <value>Verkaufen Sie sie hart nach Westen.</value>
+  </data>
+  <data name="FeaturePlay" xml:space="preserve">
+    <value>
+Demo spielen</value>
+  </data>
   <data name="FeatureSubTittle" xml:space="preserve">
     <value>
 Reisen, genießen und ein neues und erfülltes Leben führen</value>
   </data>
   <data name="FeatureTittle" xml:space="preserve">
     <value>Entdecken Sie die besten Routen der Welt</value>
+  </data>
+  <data name="DestinationTittle" xml:space="preserve">
+    <value>Unsere Reiserouten</value>
+  </data>
+  <data name="DestinationSubTittle" xml:space="preserve">
+    <value>Am meisten bevorzugt</value>
+  </data>
+  <data name="ServicesCategory" xml:space="preserve">
+    <value>Kategorien</value>
+  </data>
+  <data name="ServicesTittle" xml:space="preserve">
+    <value>
+Wir bieten beste Dienstleistungen</value>
+  </data>
+  <data name="RezervationSubTittle" xml:space="preserve">
+    <value>Einfache und schnelle Reservierung
+</value>
+  </data>
+  <data name="RezervationTittle" xml:space="preserve">
+    <value>Schließen Sie Ihre Reservierung in 3 Schritten ab
+</value>
+  </data>
+  <data name="Rezervation1" xml:space="preserve">
+    <value>
+Wählen Sie Ziel</value>
+  </data>
+  <data name="Rezervation2" xml:space="preserve">
+    <value>Wählen Sie Ihren Lieblingsort. Egal</value>
+  </data>
+  <data name="Rezervation3" xml:space="preserve">
+    <value>wo Sie in der Welt reisen.
+</value>
+  </data>
+  <data name="Rezervation4" xml:space="preserve">
+    <value>
+Zahlung durchführen</value>
+  </data>
+  <data name="Rezervation5" xml:space="preserve">
+    <value>Nachdem Sie Ihren perfekten Ort gefunden haben, machen Sie Ihren
+</value>
+  </data>
+  <data name="Rezervation6" xml:space="preserve">
+    <value>
+Bezahlen Sie und machen Sie sich bereit für die Reise.</value>
+  </data>
+  <data name="Rezervation7" xml:space="preserve">
+    <value>
+Erreichen Sie den Flughafen am ausgewählten Datum</value>
+  </data>
+  <data name="Rezervation8" xml:space="preserve">
+    <value>
+Schließlich müssen Sie am Flughafen ankommen</value>
+  </data>
+  <data name="Rezervation9" xml:space="preserve">
+    <value>Kommen Sie pünktlich und genießen Sie den Urlaub.
+</value>
+  </data>
+  <data name="Iletisim" xml:space="preserve">
+    <value>Kontaktformular
+</value>
+  </data>
+  <data name="iletisimadsoyad" xml:space="preserve">
+    <value>Ihr Vor- und Nachname
+</value>
+  </data>
+  <data name="İletisimtelno" xml:space="preserve">
+    <value>Ihre Telefonnummer
+</value>
+  </data>
+  <data name="iletisimemail" xml:space="preserve">
+    <value>Ihre E-Mail-Adresse
+</value>
+  </data>
+  <data name="iletisimeklenecek" xml:space="preserve">
+    <value>Wenn Sie noch etwas hinzufügen möchten ...
+</value>
+  </data>
+  <data name="iletisimgonder" xml:space="preserve">
+    <value>Schicken</value>
+  </data>
+  <data name="navbar1" xml:space="preserve">
+    <value>Unsere Leistungen
+</value>
+  </data>
+  <data name="navbar2" xml:space="preserve">
+    <value>Standorte
+</value>
+  </data>
+  <data name="navbar3" xml:space="preserve">
+    <value>Reservierungen
+</value>
+  </data>
+  <data name="navbar4" xml:space="preserve">
+    <value>Schreiben Sie uns
+</value>
+  </data>
+  <data name="navbar5" xml:space="preserve">
+    <value>Login
+</value>
+  </data>
+  <data name="navbar6" xml:space="preserve">
+    <value>Melden Sie sich an
+</value>
+  </data>
+  <data name="Testimonialtittle" xml:space="preserve">
+    <value>Erfahrungsberichte
+</value>
+  </data>
+  <data name="TestimonialSubTittle" xml:space="preserve">
+    <value>Was die Leute über uns sagen.
+</value>
+  </data>
+  <data name="AItittle" xml:space="preserve">
+    <value>Sie können sich nicht entscheiden, wo Sie hingehen möchten? Geben Sie die Stadt und das Land ein, die Sie besuchen möchten, und sehen Sie sich die beliebtesten Orte an.
+</value>
+  </data>
+  <data name="AISearch" xml:space="preserve">
+    <value>Geben Sie die Stadt ein, in die Sie gehen möchten...
+</value>
+  </data>
+  <data name="AIButton" xml:space="preserve">
+    <value>Forschung
+</value>
   </data>
 </root>

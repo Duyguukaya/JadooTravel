@@ -117,10 +117,131 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="FeatureButton" xml:space="preserve">
+    <value>Daha fazlasını öğrenin</value>
+  </data>
+  <data name="FeatureComment1" xml:space="preserve">
+    <value>Her yolculuk sizi heyecan verici deneyimlere taşıyor. </value>
+  </data>
+  <data name="FeatureComment2" xml:space="preserve">
+    <value>Sporcular ve macera tutkunları için özel rotalarla keşfetmeye hazır olun. Parklardan</value>
+  </data>
+  <data name="FeatureComment3" xml:space="preserve">
+    <value>sahillere, batıdan doğuya her durak unutulmaz anılarla dolu.</value>
+  </data>
+  <data name="FeaturePlay" xml:space="preserve">
+    <value>Demoyu Oynat
+</value>
+  </data>
   <data name="FeatureSubTittle" xml:space="preserve">
-    <value>Seyahat edin, tadını çıkarın ve yeni ve dolu bir hayat yaşayın</value>
+    <value>Seyahat edin, keyfini çıkarın ve dolu dolu yeni bir yaşam yaşayın</value>
   </data>
   <data name="FeatureTittle" xml:space="preserve">
     <value>Dünyadaki en iyi rotaları keşfedin</value>
+  </data>
+  <data name="DestinationTittle" xml:space="preserve">
+    <value>Tur Rotalarımız</value>
+  </data>
+  <data name="DestinationSubTittle" xml:space="preserve">
+    <value>En Çok Tercih Edilen </value>
+  </data>
+  <data name="ServicesCategory" xml:space="preserve">
+    <value>Kategoriler</value>
+  </data>
+  <data name="ServicesTittle" xml:space="preserve">
+    <value>En İyi Hizmetleri Sunuyoruz</value>
+  </data>
+  <data name="RezervationSubTittle" xml:space="preserve">
+    <value>Kolay ve Hızlı Rezervasyon </value>
+  </data>
+  <data name="RezervationTittle" xml:space="preserve">
+    <value>3 Adımda Rezervasyonunuzu Tamamlayınız</value>
+  </data>
+  <data name="Rezervation1" xml:space="preserve">
+    <value>Hedef Seçin
+</value>
+  </data>
+  <data name="Rezervation2" xml:space="preserve">
+    <value>
+Favori yerinizi seçin. Önemi yok</value>
+  </data>
+  <data name="Rezervation3" xml:space="preserve">
+    <value>Dünya içinde nereye seyahat ettiğinizi.
+</value>
+  </data>
+  <data name="Rezervation4" xml:space="preserve">
+    <value>Ödeme Yap</value>
+  </data>
+  <data name="Rezervation5" xml:space="preserve">
+    <value>Mükemmel noktanızı bulduktan sonra,
+</value>
+  </data>
+  <data name="Rezervation6" xml:space="preserve">
+    <value>
+ödeme yapın ve seyahate hazırlanın.</value>
+  </data>
+  <data name="Rezervation7" xml:space="preserve">
+    <value>
+Seçilen Tarihte Havaalanına Ulaşın</value>
+  </data>
+  <data name="Rezervation8" xml:space="preserve">
+    <value>
+Son olarak havaalanına varmanız gerekiyor</value>
+  </data>
+  <data name="Rezervation9" xml:space="preserve">
+    <value>zamanında ve tatilin tadını çıkarın.
+</value>
+  </data>
+  <data name="Iletisim" xml:space="preserve">
+    <value>İletişim Formu</value>
+  </data>
+  <data name="iletisimadsoyad" xml:space="preserve">
+    <value>Adınız Soyadınız</value>
+  </data>
+  <data name="İletisimtelno" xml:space="preserve">
+    <value>Telefon Numaranız</value>
+  </data>
+  <data name="iletisimemail" xml:space="preserve">
+    <value>E-mail Adresiniz</value>
+  </data>
+  <data name="iletisimeklenecek" xml:space="preserve">
+    <value>Varsa eklemek istedikleriniz...</value>
+  </data>
+  <data name="iletisimgonder" xml:space="preserve">
+    <value>Gönder</value>
+  </data>
+  <data name="navbar1" xml:space="preserve">
+    <value>Hizmetlerimiz</value>
+  </data>
+  <data name="navbar2" xml:space="preserve">
+    <value>Lokasyonlar</value>
+  </data>
+  <data name="navbar3" xml:space="preserve">
+    <value>Rezervasyonlar</value>
+  </data>
+  <data name="navbar4" xml:space="preserve">
+    <value>Bize Yazın</value>
+  </data>
+  <data name="navbar5" xml:space="preserve">
+    <value>Giriş Yap</value>
+  </data>
+  <data name="navbar6" xml:space="preserve">
+    <value>Kayıt O</value>
+  </data>
+  <data name="Testimonialtittle" xml:space="preserve">
+    <value>Müşteri görüşleri</value>
+  </data>
+  <data name="TestimonialSubTittle" xml:space="preserve">
+    <value>İnsanların Bizim hakkımızda söyledikleri.
+</value>
+  </data>
+  <data name="AItittle" xml:space="preserve">
+    <value>Nereyi gezeceğine karar veremedin mi? Gezmek istediğin şehir ve ülkeyi gir, en popüler yerlerini gör.</value>
+  </data>
+  <data name="AISearch" xml:space="preserve">
+    <value>Gitmek istediğin şehri gir...</value>
+  </data>
+  <data name="AIButton" xml:space="preserve">
+    <value>Araştır</value>
   </data>
 </root>
