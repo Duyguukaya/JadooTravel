@@ -1,4 +1,4 @@
-﻿
+﻿@inject Microsoft.Extensions.Localization.IStringLocalizer<SharedResource> L
 @*
 _DefaultNavbarComponentPartial
 *@
@@ -9,12 +9,12 @@ _DefaultNavbarComponentPartial
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"> </span></button>
         <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base align-items-lg-center align-items-start">
-                <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#service">Hizmetlerimiz</a></li>
-                <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#destination">Lokasyonlar</a></li>
-                <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#booking">Rezervasyonlar</a></li>
-                <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#testimonial">Bize Yazın</a></li>
-                <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#!">Giriş Yap</a></li>
-                <li class="nav-item px-3 px-xl-4"><a class="btn btn-outline-dark order-1 order-lg-0 fw-medium" href="#!">Kayıt Ol</a></li>
+                <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#service">@L["navbar1"]</a></li>
+                <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#destination">@L["navbar2"]</a></li>
+                <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#booking">@L["navbar3"]</a></li>
+                <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#testimonial">@L["navbar4"]</a></li>
+                <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#!">@L["navbar5"]</a></li>
+                <li class="nav-item px-3 px-xl-4"><a class="btn btn-outline-dark order-1 order-lg-0 fw-medium" href="#!">@L["navbar6"]</a></li>
                 <li class="nav-item dropdown px-3 px-lg-0">
                     @await Html.PartialAsync("_LanguageSwitcher")
                 </li>
