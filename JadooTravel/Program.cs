@@ -5,6 +5,10 @@ using Microsoft.Extensions.Options;
 using System.Reflection;
 using System.Globalization;
 using Microsoft.AspNetCore.Localization;
+using JadooTravel.Services.FeatureServices;
+using JadooTravel.Services.TestPlanServices;
+using JadooTravel.Services.TestimonialServices;
+using JadooTravel.Services.RezervationServices;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +17,10 @@ var builder = WebApplication.CreateBuilder(args);
 // ---------------------------
 builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<IDestinationService, DestinationService>();
+builder.Services.AddScoped<IFeatureService, FeatureService>();
+builder.Services.AddScoped<ITripPlanService, TripPlanService>();
+builder.Services.AddScoped<ITestimonialService, TestimonialService>();
+builder.Services.AddScoped<IRezervationService, RezervationService>();
 
 builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
 
