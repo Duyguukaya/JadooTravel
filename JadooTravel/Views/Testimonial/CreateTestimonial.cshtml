@@ -1,0 +1,25 @@
+﻿@model JadooTravel.Dtos.TestimonialDtos.CreateTestimonialDto
+
+@{
+    ViewData["Title"] = "CreateTestimonial";
+    Layout = "~/Views/Admin/Index.cshtml";
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<div class="container">
+    <br />
+    <br />
+    <form method="post">
+        <input type="text" asp-for="NameSurname" placeholder="Ad Soyad Giriniz" class="form-control" />
+        <br />
+        <input type="text" asp-for="CityCountry" placeholder="Şehir ve Ülke Giriniz" class="form-control" />
+        <br />
+        <input type="text" asp-for="Comment" placeholder="Yorumunuzu Giriniz" class="form-control" />
+        <br />
+        <input type="text" asp-for="ImageUrl" placeholder="ımage url Giriniz" class="form-control" />
+        <br />
+        <button class="btn btn-primary">Yorum Ekle</button>
+    </form>
+</div>
+
