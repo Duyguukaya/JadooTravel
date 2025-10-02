@@ -1,0 +1,32 @@
+﻿@model JadooTravel.Dtos.RezervationDtos.GetRezervationByIdDto
+@{
+    ViewData["Title"] = "RezervationDetail";
+    Layout = "~/Views/Admin/Index.cshtml";
+}
+
+
+<div class="container mt-5">
+    <h2>Rezervasyon Detayı</h2>
+    <table class="table table-bordered">
+        <tr>
+            <th>Ad Soyad</th>
+            <td>@Model.AdSoyad</td>
+        </tr>
+        <tr>
+            <th>Telefon</th>
+            <td>@Model.TelNo</td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td>@Model.Email</td>
+        </tr>
+        <tr>
+            <th>Açıklama</th>
+            <td>@Model.Description</td>
+        </tr>
+    </table>
+
+    <a asp-action="RezervationList" class="btn btn-secondary">Listeye Dön</a>
+</div>
+
+

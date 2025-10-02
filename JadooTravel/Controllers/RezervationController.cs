@@ -31,7 +31,21 @@ namespace JadooTravel.Controllers
                 await _rezervationService.CreateRezervationAsync(model);
                 return RedirectToAction("RezervationList"); // Kaydet sonra listeye dön
             }
+
+        public async Task<IActionResult> RezervationDetail(string id)
+        {
+            if (string.IsNullOrEmpty(id))
+                return RedirectToAction("RezervationList");
+
+            var rezervation = await _rezervationService.GetRezervationByIdDtoAsync(id);
+
+            if (rezervation == null)
+                return NotFound();
+
+            return View(rezervation);
         }
 
     }
+
+}
 
