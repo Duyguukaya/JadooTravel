@@ -1,4 +1,4 @@
-﻿@model List<JadooTravel.Dtos.RezervationDtos.CreateRezervationDto>
+﻿@model List<JadooTravel.Dtos.RezervationDtos.ResultRezervationDto>
 
 @{
     ViewData["Title"] = "RezervationList";
@@ -17,15 +17,22 @@
             <th>Telefon Numarası</th>
             <th>Email</th>
             <th>Açıklama</th>
+            <th>İşlemler</th>
+
         </tr>
         @foreach (var item in Model)
         {
             <tr>
-                <td>#</td>
+                <td>@item.RezervationId</td>
                 <td>@item.AdSoyad</td>
                 <td>@item.TelNo</td>
                 <td>@item.Email</td>
                 <td>@item.Description</td>
+                <td>
+                    <a asp-action="RezervationDetail" asp-route-id="@item.RezervationId" class="btn btn-sm btn-info">
+                        Detay
+                    </a>
+                </td>
             </tr>
         }
     </table>

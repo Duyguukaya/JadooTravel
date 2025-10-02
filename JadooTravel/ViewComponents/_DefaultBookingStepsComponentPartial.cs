@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using JadooTravel.Dtos.RezervationDtos;
+using Microsoft.AspNetCore.Mvc;
 
 namespace JadooTravel.ViewComponents
 {
@@ -7,7 +8,8 @@ namespace JadooTravel.ViewComponents
 
         public IViewComponentResult Invoke()
         {
-            return View();
+            var model = new CreateRezervationDto(); // boş model oluştur
+            return View(model); // View'e gönder
         }
     }
 }
