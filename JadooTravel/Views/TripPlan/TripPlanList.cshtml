@@ -1,36 +1,42 @@
 ﻿@model List<JadooTravel.Dtos.TripPlanDtos.ResultTripPlanDto>
+
 @{
-    ViewData["Title"] = "TripPlanList";
+    ViewData["Title"] = "Trip Plan Listesi";
     Layout = "~/Views/Admin/Index.cshtml";
 }
 
-<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+<div class="container py-5">
+    <h3 class="mb-4 fw-bold text-center">@ViewData["Title"]</h3>
 
-<div class="container">
-    <br />
-    <br />
-    <table class="table table-bordered">
-        <tr>
-            <th>#</th>
-            <th>Servis Başlığı</th>
-            <th>Servis Açıklaması</th>
-            <th>Servis İkonu</th>
-            <th>Sil</th>
-            <th>Güncelle</th>
-        </tr>
+    <div class="row g-3">
         @foreach (var item in Model)
         {
-            <tr>
-                <td>@item.TripPlanId</td>
-                <td>@item.Title</td>
-                <td>@item.Description</td>
-                <td>@item.IconUrl</td>
-                <td><a href="/TripPlan/DeleteTripPlan/@item.TripPlanId" class="btn btn-danger">Sil</a></td>
-                <td><a href="/TripPlan/UpdateTripPlan/@item.TripPlanId" class="btn btn-success">Güncelle</a></td>
-            </tr>
+            <div class="col-sm-6 col-md-3">
+                <div class="card shadow-sm rounded-4 h-100 text-center p-2">
+                    <div class="mb-3">
+                        @if (!string.IsNullOrEmpty(item.IconUrl))
+                        {
+                            <img src="@item.IconUrl" class="img-fluid" style="height:80px; width:80px; object-fit:contain;" alt="@item.Title" />
+                        }
+                        else
+                        {
+                            <div class="bg-light rounded-circle d-flex align-items-center justify-content-center" style="height:80px; width:80px; font-size:1.2rem;">
+                                No Icon
+                            </div>
+                        }
+                    </div>
+                    <h5 class="card-title fw-bold mb-2" style="font-size:1rem;">@item.Title</h5>
+                    <p class="card-text mb-3" style="font-size:0.85rem;">@item.Description</p>
+                    <div class="d-flex justify-content-between">
+                        <a href="/TripPlan/UpdateTripPlan/@item.TripPlanId" class="btn btn-sm btn-outline-primary">Güncelle</a>
+                        <a href="/TripPlan/DeleteTripPlan/@item.TripPlanId" class="btn btn-sm btn-outline-danger">Sil</a>
+                    </div>
+                </div>
+            </div>
         }
-    </table>
-    <a href="/TripPlan/CreateTripPlan/" class="btn btn-info">Yeni Servis Girişi</a>
+    </div>
+
+    <div class="text-center mt-4">
+        <a href="/TripPlan/CreateTripPlan/" class="btn btn-info fw-semibold">Yeni Servis Ekle</a>
+    </div>
 </div>
-
-

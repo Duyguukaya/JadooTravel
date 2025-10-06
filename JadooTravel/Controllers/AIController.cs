@@ -8,7 +8,7 @@ namespace JadooTravelCore.Controllers
     [AllowAnonymous]
     public class AiController : Controller
     {
-        private readonly string myapikey = "BURAYA_GECERLI_API_KEY_YAZ";
+        private readonly string myapikey = "";
 
         [HttpGet]
         public IActionResult Index()

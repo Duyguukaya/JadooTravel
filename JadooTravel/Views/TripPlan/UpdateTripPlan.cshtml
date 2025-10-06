@@ -1,25 +1,25 @@
 ﻿@model JadooTravel.Dtos.TripPlanDtos.GetTripPlanByIdDto
+
 @{
-    ViewData["Title"] = "UpdateTripPlan";
+    ViewData["Title"] = "Servisi Güncelle";
     Layout = "~/Views/Admin/Index.cshtml";
 }
 
-<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
-
-<div class="container">
-    <br />
-    <br />
-    <form method="post">
-        <input type="hidden" asp-for="TripPlanId"/>
-        <input type="text" asp-for="Title" placeholder="Başlık Giriniz" class="form-control" />
-        <br />
-        <input type="text" asp-for="Description" placeholder="Açıklama Giriniz" class="form-control" />
-        <br />
-        <input type="text" asp-for="IconUrl" placeholder="Ikon Url Giriniz" class="form-control" />
-        <br />
-
-        <button class="btn btn-primary">Servisi Ekle</button>
-    </form>
+<div class="container py-5 d-flex justify-content-center">
+    <div class="card shadow-sm rounded-4 p-4" style="max-width: 500px; width:100%;">
+        <h4 class="mb-4 text-center fw-bold">@ViewData["Title"]</h4>
+        <form method="post">
+            <input type="hidden" asp-for="TripPlanId" />
+            <div class="mb-3">
+                <input type="text" asp-for="Title" placeholder="Başlık Giriniz" class="form-control" />
+            </div>
+            <div class="mb-3">
+                <input type="text" asp-for="Description" placeholder="Açıklama Giriniz" class="form-control" />
+            </div>
+            <div class="mb-3">
+                <input type="text" asp-for="IconUrl" placeholder="Ikon URL Giriniz" class="form-control" />
+            </div>
+            <button class="btn btn-primary w-100">Servisi Güncelle</button>
+        </form>
+    </div>
 </div>
-
-

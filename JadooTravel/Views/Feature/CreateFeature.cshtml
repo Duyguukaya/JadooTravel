@@ -1,24 +1,26 @@
 ﻿@model JadooTravel.Dtos.FeatureDtos.CreateFeatureDto
 @{
-    ViewData["Title"] = "CreateFeature";
+    ViewData["Title"] = "Yeni Özellik Ekle";
     Layout = "~/Views/Admin/Index.cshtml";
 }
 
-<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
-
-<div class="container">
-    <br />
-    <br />
-    <form method="post">
-        <input type="text" asp-for="Tittle" placeholder="Başlığı Giriniz" class="form-control" />
-        <br />
-        <input type="text" asp-for="MainTittle" placeholder="Ana Başlığı Giriniz" class="form-control" />
-        <br />
-        <input type="text" asp-for="VideoUrl" placeholder="Video Urlsini Giriniz" class="form-control" />
-        <br />
-        <textarea asp-for="Description" placeholder="Açıklama Giriniz" rows="5" class="form-control"></textarea>
-        <br />
-        <button class="btn btn-primary">Özellik Ekle</button>
-    </form>
+<div class="container py-5">
+    <div class="card shadow-sm rounded-4 p-4" style="max-width:700px; margin:auto;">
+        <h4 class="mb-4 fw-bold">@ViewData["Title"]</h4>
+        <form method="post">
+            <div class="mb-3">
+                <input type="text" asp-for="Tittle" placeholder="Başlığı Giriniz" class="form-control" />
+            </div>
+            <div class="mb-3">
+                <input type="text" asp-for="MainTittle" placeholder="Ana Başlığı Giriniz" class="form-control" />
+            </div>
+            <div class="mb-3">
+                <input type="text" asp-for="VideoUrl" placeholder="Video Urlsini Giriniz" class="form-control" />
+            </div>
+            <div class="mb-3">
+                <textarea asp-for="Description" placeholder="Açıklama Giriniz" rows="5" class="form-control"></textarea>
+            </div>
+            <button class="btn btn-primary w-100">Özellik Ekle</button>
+        </form>
+    </div>
 </div>
-

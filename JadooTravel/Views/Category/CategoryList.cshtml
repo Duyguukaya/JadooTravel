@@ -3,27 +3,41 @@
     Layout = "~/Views/Admin/Index.cshtml";
 }
 
-<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
-
-<div class="container">
-    <br />
-    <br />
-    <table class="table table-bordered">
-        <tr>
-            <th>#</th>
-            <th>Kategori Adı</th>
-            <th>Sil</th>
-            <th>Güncelle</th>
-        </tr>
-        @foreach(var item in Model)
-        {
-            <tr>
-                <td>@item.CategoryId</td>
-                <td>@item.CategoryName</td>
-                <td><a href="/Category/DeleteCategory/@item.CategoryId" class="btn btn-danger">Sil</a></td>
-                <td><a href="/Category/UpdateCategory/@item.CategoryId" class="btn btn-success">Güncelle</a></td>
-            </tr>
-        }
-    </table>
-    <a href="/Category/CreateCategory/" class="btn btn-info">Yeni Kategori Girişi</a>
+<div class="container py-5">
+    <div class="card shadow-sm rounded-4" style="background-color:#ffffff;">
+        <div class="card-header d-flex justify-content-between align-items-center" style="background-color:#b8d0eb; color:#1a1a1a; border-radius: .5rem .5rem 0 0;">
+            <h4 class="mb-0">Kategori Listesi</h4>
+            <a href="/Category/CreateCategory/" class="btn btn-light btn-sm fw-semibold">
+                <i class="bi bi-plus-circle me-1"></i> Yeni Kategori
+            </a>
+        </div>
+        <div class="card-body p-0">
+            <table class="table table-hover table-striped mb-0 text-center">
+                <thead style="background-color:#e1ecf9;">
+                    <tr>
+                        <th>#</th>
+                        <th>Kategori Adı</th>
+                        <th>İşlemler</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.CategoryId</td>
+                            <td>@item.CategoryName</td>
+                            <td>
+                                <a href="/Category/UpdateCategory/@item.CategoryId" class="btn btn-sm btn-outline-primary me-2">
+                                    <i class="bi bi-pencil-square"></i> Güncelle
+                                </a>
+                                <a href="/Category/DeleteCategory/@item.CategoryId" class="btn btn-sm btn-outline-danger">
+                                    <i class="bi bi-trash"></i> Sil
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
 </div>

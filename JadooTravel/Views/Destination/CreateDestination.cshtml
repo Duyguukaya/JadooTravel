@@ -1,27 +1,47 @@
 ﻿@model JadooTravel.Dtos.DestinationDtos.CreateDestinationDto
-
 @{
     Layout = "~/Views/Admin/Index.cshtml";
 }
 
-<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
-
-<div class="container">
-    <br />
-    <br />
-    <form method="post">
-        <input type="text" asp-for="CityCountry" placeholder="Şehir ve Ülke Giriniz" class="form-control" />
-        <br />
-        <input type="text" asp-for="ImageUrl" placeholder="Fotoğraf Yolu Giriniz" class="form-control" />
-        <br />
-        <input type="text" asp-for="Price" placeholder="Fiyat Giriniz" class="form-control" />
-        <br />
-        <input type="text" asp-for="DayNight" placeholder="Gün/Gece Sayısı Giriniz" class="form-control" />
-        <br />
-        <input type="text" asp-for="Capacity" placeholder="Kapatite Giriniz" class="form-control" />
-        <br />
-        <textarea asp-for="Description" placeholder="Tur Açıklamasını Giriniz" rows="5" class="form-control"></textarea>
-        <br />
-        <button class="btn btn-primary">Turu Ekle</button>
-    </form>
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-6">
+            <div class="card shadow-sm rounded-4" style="background-color:#ffffff;">
+                <div class="card-header text-center" style="background-color:#c4daf5; color:#1a1a1a; border-radius: .5rem .5rem 0 0;">
+                    <h4 class="mb-0">Yeni Tur Ekle</h4>
+                </div>
+                <div class="card-body">
+                    <form method="post">
+                        <div class="mb-3">
+                            <label asp-for="CityCountry" class="form-label fw-semibold">Şehir / Ülke</label>
+                            <input type="text" asp-for="CityCountry" class="form-control rounded-pill" placeholder="Şehir ve ülke giriniz" />
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="ImageUrl" class="form-label fw-semibold">Fotoğraf URL</label>
+                            <input type="text" asp-for="ImageUrl" class="form-control rounded-pill" placeholder="Fotoğraf yolunu giriniz" />
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Price" class="form-label fw-semibold">Fiyat</label>
+                            <input type="text" asp-for="Price" class="form-control rounded-pill" placeholder="Fiyat giriniz" />
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="DayNight" class="form-label fw-semibold">Gün / Gece</label>
+                            <input type="text" asp-for="DayNight" class="form-control rounded-pill" placeholder="Gün/Gece sayısı" />
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Capacity" class="form-label fw-semibold">Kapasite</label>
+                            <input type="text" asp-for="Capacity" class="form-control rounded-pill" placeholder="Tur kapasitesi" />
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Description" class="form-label fw-semibold">Tur Açıklaması</label>
+                            <textarea asp-for="Description" rows="5" class="form-control rounded-3" placeholder="Tur açıklamasını giriniz"></textarea>
+                        </div>
+                        <button class="btn w-100" style="background-color:#7da4e8; color:white; font-weight:600;">
+                            <i class="bi bi-check-circle me-1"></i> Kaydet
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
