@@ -10,5 +10,6 @@
         public string TripPlanCollectionName { get; set; }
         public string TestimonialCollectionName { get; set; }
         public string RezervationCollectionName { get; set; }
+        public string UserCollectionName { get; set; }
     }
 }
