@@ -82,20 +82,25 @@ Aşağıdaki ekran görüntüleri, uygulamanın farklı sayfalarını ve özelli
 <img width="1893" height="823" alt="Ekran görüntüsü 2025-10-06 194530" src="https://github.com/user-attachments/assets/4ca9cad6-17c4-4b7a-aa77-28030323d547" />
 <img width="1887" height="821" alt="Ekran görüntüsü 2025-10-06 194519" src="https://github.com/user-attachments/assets/0a121aca-5e7d-477b-a698-bd726267f910" />
 <img width="1890" height="822" alt="Ekran görüntüsü 2025-10-06 194610" src="https://github.com/user-attachments/assets/bc490aff-f84c-404f-bb21-0db031767788" />
-<img width="1892" height="821" alt="Ekran görüntüsü 2025-10-06 194639" src="https://github.com/user-attachments/assets/be23b101-0aa9-4bc5-919d-50fc2c5437b4" />
 <img width="1896" height="820" alt="Ekran görüntüsü 2025-10-06 194617" src="https://github.com/user-attachments/assets/1e278fad-2e27-4b62-870d-40225d8f2101" />
-
-<img width="1898" height="820" alt="Ekran görüntüsü 2025-10-06 194632" src="https://github.com/user-attachments/assets/74961873-13ec-46b0-9224-46a1b4b38ad5" />
 <img width="1894" height="823" alt="Ekran görüntüsü 2025-10-06 194624" src="https://github.com/user-attachments/assets/4ccc00ff-2cb9-4a1d-9a52-650476cef3d0" />
-<img width="1896" height="826" alt="Ekran görüntüsü 2025-10-06 194722" src="https://github.com/user-attachments/assets/33db45b5-32ef-4292-8b82-bb21f6bb9f3d" />
+<img width="1898" height="820" alt="Ekran görüntüsü 2025-10-06 194632" src="https://github.com/user-attachments/assets/74961873-13ec-46b0-9224-46a1b4b38ad5" />
+<img width="1892" height="821" alt="Ekran görüntüsü 2025-10-06 194639" src="https://github.com/user-attachments/assets/be23b101-0aa9-4bc5-919d-50fc2c5437b4" />
 <img width="1895" height="824" alt="Ekran görüntüsü 2025-10-06 194647" src="https://github.com/user-attachments/assets/1397dae6-24b1-4555-aead-31178f765d32" />
-<img width="1892" height="820" alt="Ekran görüntüsü 2025-10-06 194741" src="https://github.com/user-attachments/assets/0d360d5b-c729-44b0-906f-3d337e1fd106" />
+<img width="1896" height="826" alt="Ekran görüntüsü 2025-10-06 194722" src="https://github.com/user-attachments/assets/33db45b5-32ef-4292-8b82-bb21f6bb9f3d" />
 <img width="1890" height="818" alt="Ekran görüntüsü 2025-10-06 194731" src="https://github.com/user-attachments/assets/222f86d9-8274-45e0-a6fd-2216e6874d75" />
+<img width="1892" height="820" alt="Ekran görüntüsü 2025-10-06 194741" src="https://github.com/user-attachments/assets/0d360d5b-c729-44b0-906f-3d337e1fd106" />
+
+
 ### Admin Sayfası
-<img width="1895" height="818" alt="Ekran görüntüsü 2025-10-06 194855" src="https://github.com/user-attachments/assets/2deef0b5-a100-47a4-833c-f5283cdf69b0" />
 <img width="1896" height="828" alt="Ekran görüntüsü 2025-10-06 194754" src="https://github.com/user-attachments/assets/59d0a6a3-ab55-4edd-8fe9-c4f129a04d85" />
+<img width="1892" height="825" alt="Ekran görüntüsü 2025-10-06 194803" src="https://github.com/user-attachments/assets/c3c422f1-2271-48a8-912c-c41d6bcf7f23" />
 <img width="1897" height="826" alt="Ekran görüntüsü 2025-10-06 194826" src="https://github.com/user-attachments/assets/65e77eb1-5589-41b4-8864-c5c5651d3ecd" />
 <img width="1896" height="826" alt="Ekran görüntüsü 2025-10-06 194811" src="https://github.com/user-attachments/assets/08ccc861-cda8-4d31-bd52-e61230f091e0" />
-<img width="1892" height="825" alt="Ekran görüntüsü 2025-10-06 194803" src="https://github.com/user-attachments/assets/c3c422f1-2271-48a8-912c-c41d6bcf7f23" />
 <img width="1899" height="832" alt="Ekran görüntüsü 2025-10-06 194838" src="https://github.com/user-attachments/assets/57d03184-2f32-4429-b744-4b6a58bce79e" />
 <img width="1896" height="829" alt="Ekran görüntüsü 2025-10-06 194846" src="https://github.com/user-attachments/assets/34f1eb90-0cdb-4ef9-aaf7-8f9723734d52" />
+
+### MongoDb
+<img width="1445" height="892" alt="Ekran görüntüsü 2025-10-06 200252" src="https://github.com/user-attachments/assets/f9f5aca9-4800-4e09-a505-15a12b9550f9" />
+<img width="1441" height="910" alt="Ekran görüntüsü 2025-10-06 200257" src="https://github.com/user-attachments/assets/027a1c5b-1427-47a9-ba36-ab54c7dfb389" />
+
