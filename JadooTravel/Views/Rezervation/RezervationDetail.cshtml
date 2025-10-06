@@ -1,32 +1,33 @@
 ﻿@model JadooTravel.Dtos.RezervationDtos.GetRezervationByIdDto
+
 @{
-    ViewData["Title"] = "RezervationDetail";
+    ViewData["Title"] = "Rezervasyon Detayı";
     Layout = "~/Views/Admin/Index.cshtml";
 }
 
+<div class="container py-5" style="max-width:700px;">
+    <h3 class="mb-4 fw-bold text-center">@ViewData["Title"]</h3>
 
-<div class="container mt-5">
-    <h2>Rezervasyon Detayı</h2>
-    <table class="table table-bordered">
-        <tr>
-            <th>Ad Soyad</th>
-            <td>@Model.AdSoyad</td>
-        </tr>
-        <tr>
-            <th>Telefon</th>
-            <td>@Model.TelNo</td>
-        </tr>
-        <tr>
-            <th>Email</th>
-            <td>@Model.Email</td>
-        </tr>
-        <tr>
-            <th>Açıklama</th>
-            <td>@Model.Description</td>
-        </tr>
-    </table>
+    <div class="card shadow-sm rounded-4 p-4">
+        <table class="table table-borderless mb-4">
+            <tr>
+                <th class="fw-semibold w-50">Ad Soyad</th>
+                <td>@Model.AdSoyad</td>
+            </tr>
+            <tr>
+                <th class="fw-semibold">Telefon</th>
+                <td>@Model.TelNo</td>
+            </tr>
+            <tr>
+                <th class="fw-semibold">Email</th>
+                <td>@Model.Email</td>
+            </tr>
+            <tr>
+                <th class="fw-semibold">Açıklama</th>
+                <td>@Model.Description</td>
+            </tr>
+        </table>
 
-    <a asp-action="RezervationList" class="btn btn-secondary">Listeye Dön</a>
+        <a asp-action="RezervationList" class="btn btn-secondary w-100">Listeye Dön</a>
+    </div>
 </div>
-
-

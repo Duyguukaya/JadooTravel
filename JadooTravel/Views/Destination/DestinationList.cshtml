@@ -3,31 +3,35 @@
     Layout = "~/Views/Admin/Index.cshtml";
 }
 
-<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+<div class="container py-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h3 class="fw-bold">Tur Listesi</h3>
+        <a href="/Destination/CreateDestination/" class="btn btn-primary">
+            <i class="bi bi-plus-circle me-1"></i> Yeni Tur
+        </a>
+    </div>
 
-<div class="container">
-    <br />
-    <br />
-    <table class="table table-bordered">
-        <tr>
-            <th>#</th>
-            <th>Tur Şehir Ülke</th>
-            <th>Tur Fiyatı</th>
-            <th>Tur Kapasitesi</th>
-            <th>Sil</th>
-            <th>Güncelle</th>
-        </tr>
+    <div class="row g-4">
         @foreach (var item in Model)
         {
-            <tr>
-                <td>@item.DestinationId</td>
-                <td>@item.CityCountry</td>
-                <td>@item.Price</td>
-                <td>@item.Capacity</td>
-                <td><a href="/Destination/DeleteDestination/@item.DestinationId" class="btn btn-danger">Sil</a></td>
-                <td><a href="/Destination/UpdateDestination/@item.DestinationId" class="btn btn-success">Güncelle</a></td>
-            </tr>
+            <div class="col-md-6 col-lg-4">
+                <div class="card shadow-sm h-100">
+                    <img src="@item.ImageUrl" class="card-img-top" style="height:200px; object-fit:cover;" alt="@item.CityCountry" />
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-semibold">@item.CityCountry</h5>
+                        <p class="card-text mb-1"><strong>Fiyat:</strong> @item.Price ₺</p>
+                        <p class="card-text mb-1"><strong>Kapasite:</strong> @item.Capacity</p>
+                        <div class="mt-auto d-flex justify-content-between">
+                            <a href="/Destination/UpdateDestination/@item.DestinationId" class="btn btn-sm btn-outline-primary">
+                                <i class="bi bi-pencil-square me-1"></i> Güncelle
+                            </a>
+                            <a href="/Destination/DeleteDestination/@item.DestinationId" class="btn btn-sm btn-outline-danger">
+                                <i class="bi bi-trash me-1"></i> Sil
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         }
-    </table>
-    <a href="/Destination/CreateDestination/" class="btn btn-info">Yeni Tur Girişi</a>
+    </div>
 </div>

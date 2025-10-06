@@ -1,41 +1,42 @@
 ﻿@model List<JadooTravel.Dtos.RezervationDtos.ResultRezervationDto>
 
 @{
-    ViewData["Title"] = "RezervationList";
+    ViewData["Title"] = "Rezervasyon Listesi";
     Layout = "~/Views/Admin/Index.cshtml";
 }
 
-<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+<div class="container py-5">
+    <h3 class="mb-4 fw-bold text-center">@ViewData["Title"]</h3>
 
-<div class="container">
-    <br />
-    <br />
-    <table class="table table-bordered">
-        <tr>
-            <th>#</th>
-            <th>Ad Soyad</th>
-            <th>Telefon Numarası</th>
-            <th>Email</th>
-            <th>Açıklama</th>
-            <th>İşlemler</th>
-
-        </tr>
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>@item.RezervationId</td>
-                <td>@item.AdSoyad</td>
-                <td>@item.TelNo</td>
-                <td>@item.Email</td>
-                <td>@item.Description</td>
-                <td>
-                    <a asp-action="RezervationDetail" asp-route-id="@item.RezervationId" class="btn btn-sm btn-info">
-                        Detay
-                    </a>
-                </td>
-            </tr>
-        }
-    </table>
+    <div class="table-responsive">
+        <table class="table table-hover align-middle text-center shadow-sm rounded-4 overflow-hidden">
+            <thead class="table-light">
+                <tr>
+                    <th>#</th>
+                    <th>Ad Soyad</th>
+                    <th>Telefon Numarası</th>
+                    <th>Email</th>
+                    <th>Açıklama</th>
+                    <th>İşlemler</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.RezervationId</td>
+                        <td>@item.AdSoyad</td>
+                        <td>@item.TelNo</td>
+                        <td>@item.Email</td>
+                        <td>@item.Description</td>
+                        <td>
+                            <a asp-action="RezervationDetail" asp-route-id="@item.RezervationId" class="btn btn-sm btn-info">
+                                Detay
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
 </div>
-
-

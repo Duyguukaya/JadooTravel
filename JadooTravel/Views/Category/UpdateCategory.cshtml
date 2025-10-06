@@ -3,15 +3,26 @@
     Layout = "~/Views/Admin/Index.cshtml";
 }
 
-<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
-
-<div class="container">
-    <br />
-    <br />
-    <form method="post">
-        <input type="hidden" asp-for="CategoryId" />
-        <input type="text" asp-for="CategoryName" placeholder="Kategori Adını Giriniz" class="form-control" />
-        <br />
-        <button class="btn btn-primary">Kategoriyi Güncelle</button>
-    </form>
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-6">
+            <div class="card shadow-sm rounded-4" style="background-color:#ffffff;">
+                <div class="card-header text-center" style="background-color:#c4daf5; color:#1a1a1a; border-radius: .5rem .5rem 0 0;">
+                    <h4 class="mb-0">Kategori Güncelle</h4>
+                </div>
+                <div class="card-body">
+                    <form method="post">
+                        <input type="hidden" asp-for="CategoryId" />
+                        <div class="mb-3">
+                            <label asp-for="CategoryName" class="form-label fw-semibold">Kategori Adı</label>
+                            <input type="text" asp-for="CategoryName" class="form-control rounded-pill" placeholder="Yeni kategori adını giriniz" />
+                        </div>
+                        <button class="btn w-100" style="background-color:#7da4e8; color:white; font-weight:600;">
+                            <i class="bi bi-arrow-repeat me-1"></i> Güncelle
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
