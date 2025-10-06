@@ -1,4 +1,4 @@
-using JadooTravel.Services.CategorySerices;
+ï»¿using JadooTravel.Services.CategorySerices;
 using JadooTravel.Services.DestinationServices;
 using JadooTravel.Settings;
 using Microsoft.Extensions.Options;
@@ -9,6 +9,7 @@ using JadooTravel.Services.FeatureServices;
 using JadooTravel.Services.TestPlanServices;
 using JadooTravel.Services.TestimonialServices;
 using JadooTravel.Services.RezervationServices;
+using JadooTravel.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -32,7 +33,7 @@ builder.Services.AddScoped<IDatabaseSettings>(sp =>
 });
 
 // ---------------------------
-// Localization (dil desteði)
+// Localization (dil desteï¿½i)
 // ---------------------------
 builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
 
@@ -57,12 +58,12 @@ var supportedCultures = new[]
 
 var localizationOptions = new RequestLocalizationOptions
 {
-    DefaultRequestCulture = new RequestCulture("tr-TR"), // Baþlangýç dili
+    DefaultRequestCulture = new RequestCulture("tr-TR"), // Baï¿½langï¿½ï¿½ dili
     SupportedCultures = supportedCultures,
     SupportedUICultures = supportedCultures
 };
 
-// Provider sýrasý: önce query string -> cookie -> browser header
+// Provider sï¿½rasï¿½: ï¿½nce query string -> cookie -> browser header
 localizationOptions.RequestCultureProviders.Insert(0, new QueryStringRequestCultureProvider { QueryStringKey = "culture", UIQueryStringKey = "ui-culture" });
 
 app.UseRequestLocalization(localizationOptions);
@@ -85,6 +86,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Default}/{action=Index}/{id?}");
 
 app.Run();

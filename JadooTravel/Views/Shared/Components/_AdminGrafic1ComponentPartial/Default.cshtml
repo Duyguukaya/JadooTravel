@@ -1,0 +1,72 @@
+﻿<div class="col-lg-8 d-flex align-items-stretch" style="height: 122vh;">
+    <!-- tüm ekran yüksekliği -->
+    <div class="card w-100">
+        <div class="card-body" style="height: 100%; padding: 1rem;">
+            <h5 class="card-title fw-semibold">Tur Kapasitesi ve Fiyatı</h5>
+            <!-- Canvas full alan kaplayacak -->
+            <canvas id="capacityPriceChart" style="width:100%; height:100%;"></canvas>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var chartData = @Html.Raw(ViewBag.ChartData);
+
+        const ctx = document.getElementById('capacityPriceChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: chartData.names,
+                datasets: [
+                    {
+                        label: 'Tur Kapasitesi',
+                        data: chartData.capacities,
+                        backgroundColor: 'rgba(54, 162, 235, 0.5)',
+                        borderColor: 'rgba(54, 162, 235, 1)',
+                        borderWidth: 1,
+                        yAxisID: 'yCapacity'
+                    },
+                    {
+                        label: 'Tur Fiyatı',
+                        data: chartData.prices,
+                        backgroundColor: 'rgba(255, 99, 132, 0.5)',
+                        borderColor: 'rgba(255, 99, 132, 1)',
+                        borderWidth: 1,
+                        yAxisID: 'yPrice'
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false, // canvas card ile eşleşsin
+                plugins: {
+                    legend: { display: true },
+                    title: { display: true, text: 'Tur Kapasitesi ve Fiyatı' }
+                    // datalabels eklentisi kaldırıldı, değerler artık gözükmeyecek
+                },
+                scales: {
+                    yCapacity: {
+                        type: 'linear',
+                        position: 'left',
+                        beginAtZero: true,
+                        title: { display: true, text: 'Kapasite' },
+                        suggestedMax: 50
+                    },
+                    yPrice: {
+                        type: 'linear',
+                        position: 'right',
+                        beginAtZero: true,
+                        title: { display: true, text: 'Fiyat' },
+                        grid: { drawOnChartArea: false },
+                        suggestedMax: 2000
+                    },
+                    x: {
+                        title: { display: true, text: 'Şehir' }
+                    }
+                }
+            }
+        });
+    });
+</script>

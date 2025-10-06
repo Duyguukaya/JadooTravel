@@ -1,0 +1,51 @@
+﻿<div class="col-lg-12 col-sm-6" style="height: 61vh;">
+    <div class="card overflow-hidden" style="height: 100%;">
+        <div class="card-body d-flex flex-column align-items-center justify-content-center" style="height: 100%; padding: 1rem;">
+
+            <h5 class="card-title mb-2 fw-semibold">Toplam Kazanç ve Tur Dağılımı</h5>
+
+            <!-- Doughnut Chart sarmalayıcı div ile boyut sınırlı -->
+            <div style="width: 150px; height: 150px; margin: 1rem 0;">
+                <canvas id="totalMoneyChart"></canvas>
+            </div>
+
+            <!-- Toplam para altta -->
+            <div style="margin-top: 0.5rem; text-align:center;">
+                <h5 class="mb-0">₺@ViewBag.TotalMoney</h5>
+                <small>Total</small>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var moneyByTour = @Html.Raw(ViewBag.MoneyByTour);
+
+        const ctx = document.getElementById('totalMoneyChart').getContext('2d');
+
+        new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: moneyByTour.map(x => x.Name),
+                datasets: [{
+                    data: moneyByTour.map(x => x.Value),
+                    backgroundColor: moneyByTour.map((_, i) => `hsl(${i*45}, 70%, 50%)`),
+                    borderColor: '#fff',
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false, // sarmalayıcı div boyutuna uyacak
+                plugins: {
+                    legend: { display: false },
+                    tooltip: { enabled: true }
+                },
+                cutout: '70%'
+            }
+        });
+    });
+</script>

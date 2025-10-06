@@ -1,0 +1,33 @@
+﻿<div class="row">
+    <div class="col-lg-12">
+        <div class="card w-100">
+            <div class="card-body">
+                <div class="d-flex mb-4 justify-content-between align-items-center">
+                    <h5 class="mb-0 fw-bold">Son 4 Kullanıcı Yorumu</h5>
+                </div>
+
+                <div class="row g-3">
+                    @foreach (var testimonial in ((IEnumerable<JadooTravel.Dtos.TestimonialDtos.ResultTestimonialDto>)ViewBag.LastFourTestimonials))
+                    {
+                        <div class="col-sm-6 col-xl-3">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body d-flex flex-column">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img src="@testimonial.ImageUrl" alt="@testimonial.NameSurname" class="rounded-circle me-3" style="width:60px; height:60px; object-fit:cover;">
+                                        <div>
+                                            <h6 class="fw-bold mb-0">@testimonial.NameSurname</h6>
+                                            <small class="text-muted">@testimonial.CityCountry</small>
+                                        </div>
+                                    </div>
+                                    <!-- text-truncate kaldırıldı, yorum kutuya sığacak -->
+                                    <p class="mb-0" style="white-space: pre-wrap;">@testimonial.Comment</p>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
