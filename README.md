@@ -76,29 +76,29 @@ JadooTravel, aşağıdaki özellikleri bir araya getirir:
 ## 📸 Ekran Görüntüleri (Screenshots)
 Aşağıdaki ekran görüntüleri, uygulamanın farklı sayfalarını ve özelliklerini göstermektedir.  
 ### Anasayfa
-<img width="1894" height="834" alt="Ekran görüntüsü 2025-10-06 194508" src="https://github.com/user-attachments/assets/c69f3e49-f57f-407e-bdbc-0acedafd8b8f" />
-<img width="1898" height="827" alt="Ekran görüntüsü 2025-10-06 194557" src="https://github.com/user-attachments/assets/a360436e-e04c-4ac6-a4e8-349b506f74cd" />
-<img width="1895" height="827" alt="Ekran görüntüsü 2025-10-06 194544" src="https://github.com/user-attachments/assets/c31b6bcc-4fbf-485d-b8bf-a5f163b329da" />
-<img width="1893" height="823" alt="Ekran görüntüsü 2025-10-06 194530" src="https://github.com/user-attachments/assets/4ca9cad6-17c4-4b7a-aa77-28030323d547" />
-<img width="1887" height="821" alt="Ekran görüntüsü 2025-10-06 194519" src="https://github.com/user-attachments/assets/0a121aca-5e7d-477b-a698-bd726267f910" />
-<img width="1890" height="822" alt="Ekran görüntüsü 2025-10-06 194610" src="https://github.com/user-attachments/assets/bc490aff-f84c-404f-bb21-0db031767788" />
-<img width="1896" height="820" alt="Ekran görüntüsü 2025-10-06 194617" src="https://github.com/user-attachments/assets/1e278fad-2e27-4b62-870d-40225d8f2101" />
-<img width="1894" height="823" alt="Ekran görüntüsü 2025-10-06 194624" src="https://github.com/user-attachments/assets/4ccc00ff-2cb9-4a1d-9a52-650476cef3d0" />
-<img width="1898" height="820" alt="Ekran görüntüsü 2025-10-06 194632" src="https://github.com/user-attachments/assets/74961873-13ec-46b0-9224-46a1b4b38ad5" />
-<img width="1892" height="821" alt="Ekran görüntüsü 2025-10-06 194639" src="https://github.com/user-attachments/assets/be23b101-0aa9-4bc5-919d-50fc2c5437b4" />
-<img width="1895" height="824" alt="Ekran görüntüsü 2025-10-06 194647" src="https://github.com/user-attachments/assets/1397dae6-24b1-4555-aead-31178f765d32" />
-<img width="1896" height="826" alt="Ekran görüntüsü 2025-10-06 194722" src="https://github.com/user-attachments/assets/33db45b5-32ef-4292-8b82-bb21f6bb9f3d" />
-<img width="1890" height="818" alt="Ekran görüntüsü 2025-10-06 194731" src="https://github.com/user-attachments/assets/222f86d9-8274-45e0-a6fd-2216e6874d75" />
-<img width="1892" height="820" alt="Ekran görüntüsü 2025-10-06 194741" src="https://github.com/user-attachments/assets/0d360d5b-c729-44b0-906f-3d337e1fd106" />
-
+<img width="1894" height="821" alt="Ekran görüntüsü 2025-10-07 142509" src="https://github.com/user-attachments/assets/e0ae1e32-c924-4a97-b268-34c797246feb" />
+<img width="1897" height="819" alt="Ekran görüntüsü 2025-10-07 142602" src="https://github.com/user-attachments/assets/8fd572e7-1628-4baa-a59e-75dedb872821" />
+<img width="1893" height="820" alt="Ekran görüntüsü 2025-10-07 142550" src="https://github.com/user-attachments/assets/aaed193f-c6e4-45df-915a-cf44a3bde6d6" />
+<img width="1895" height="822" alt="Ekran görüntüsü 2025-10-07 142538" src="https://github.com/user-attachments/assets/783fb85c-cc3e-40b7-96ce-d189f21a1977" />
+<img width="1891" height="816" alt="Ekran görüntüsü 2025-10-07 142524" src="https://github.com/user-attachments/assets/fa186fa8-8616-4b48-9cca-7de1563db707" />
+<img width="1895" height="822" alt="Ekran görüntüsü 2025-10-07 142637" src="https://github.com/user-attachments/assets/3362e330-9732-4f26-aa53-f84076b7983c" />
+<img width="1898" height="819" alt="Ekran görüntüsü 2025-10-07 142618" src="https://github.com/user-attachments/assets/54ede355-b8de-4a27-b254-845eb92fec7b" />
+<img width="1889" height="829" alt="Ekran görüntüsü 2025-10-07 142651" src="https://github.com/user-attachments/assets/44809248-ca83-4380-a9b6-d6f6ceafa72b" />
+<img width="1893" height="817" alt="Ekran görüntüsü 2025-10-07 142701" src="https://github.com/user-attachments/assets/b198494f-cb5e-4dc2-aae4-bba03be8dbd7" />
+<img width="1898" height="819" alt="Ekran görüntüsü 2025-10-07 142719" src="https://github.com/user-attachments/assets/a288e517-2541-46e5-bacb-51fd1faf204a" />
+<img width="1897" height="822" alt="Ekran görüntüsü 2025-10-07 142750" src="https://github.com/user-attachments/assets/bea181a4-2736-45aa-8641-a6d328c5174b" />
+<img width="1894" height="819" alt="Ekran görüntüsü 2025-10-07 142759" src="https://github.com/user-attachments/assets/c54d48c4-847b-464e-bcfe-b5a8fbebff70" />
 
 ### Admin Sayfası
-<img width="1896" height="828" alt="Ekran görüntüsü 2025-10-06 194754" src="https://github.com/user-attachments/assets/59d0a6a3-ab55-4edd-8fe9-c4f129a04d85" />
-<img width="1892" height="825" alt="Ekran görüntüsü 2025-10-06 194803" src="https://github.com/user-attachments/assets/c3c422f1-2271-48a8-912c-c41d6bcf7f23" />
-<img width="1897" height="826" alt="Ekran görüntüsü 2025-10-06 194826" src="https://github.com/user-attachments/assets/65e77eb1-5589-41b4-8864-c5c5651d3ecd" />
-<img width="1896" height="826" alt="Ekran görüntüsü 2025-10-06 194811" src="https://github.com/user-attachments/assets/08ccc861-cda8-4d31-bd52-e61230f091e0" />
-<img width="1899" height="832" alt="Ekran görüntüsü 2025-10-06 194838" src="https://github.com/user-attachments/assets/57d03184-2f32-4429-b744-4b6a58bce79e" />
-<img width="1896" height="829" alt="Ekran görüntüsü 2025-10-06 194846" src="https://github.com/user-attachments/assets/34f1eb90-0cdb-4ef9-aaf7-8f9723734d52" />
+<img width="1894" height="828" alt="Ekran görüntüsü 2025-10-07 142816" src="https://github.com/user-attachments/assets/539d866a-e70f-4eb8-8493-a21e1312282d" />
+<img width="1894" height="820" alt="Ekran görüntüsü 2025-10-07 142846" src="https://github.com/user-attachments/assets/0010bb7e-e27f-40fc-aace-a589558b4982" />
+<img width="1892" height="826" alt="Ekran görüntüsü 2025-10-07 142857" src="https://github.com/user-attachments/assets/fbfe69fe-c548-4be0-9a8e-6cad9605f6ef" />
+<img width="1896" height="829" alt="Ekran görüntüsü 2025-10-07 142910" src="https://github.com/user-attachments/assets/640ce0c3-0154-41c6-8dea-78f8359be961" />
+<img width="1911" height="821" alt="Ekran görüntüsü 2025-10-07 142924" src="https://github.com/user-attachments/assets/bb1fcdbe-af21-45ef-9d00-f5b9642a43f8" />
+<img width="1890" height="822" alt="Ekran görüntüsü 2025-10-07 142933" src="https://github.com/user-attachments/assets/6fe25d3e-5b91-4172-bcb2-581ba8d3bc6d" />
+<img width="1919" height="819" alt="Ekran görüntüsü 2025-10-07 142941" src="https://github.com/user-attachments/assets/8b32dc10-39a8-4d4a-9c09-5d8b5df63c96" />
+<img width="1919" height="823" alt="Ekran görüntüsü 2025-10-07 143136" src="https://github.com/user-attachments/assets/d63f9f54-1bc5-4626-a98d-34646787c23f" />
+
 
 ### MongoDb
 <img width="1445" height="892" alt="Ekran görüntüsü 2025-10-06 200252" src="https://github.com/user-attachments/assets/f9f5aca9-4800-4e09-a505-15a12b9550f9" />
